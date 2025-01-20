@@ -31,7 +31,6 @@ body{
     display: flex;
     
 }
-
 .orange-color{
     color: #FEA301;
 }
@@ -44,7 +43,7 @@ body{
 .violet-blue{
     color: #5D58EF;
 }
-/* ______________nav styles_________ */
+/* ______________header styles_________ */
 .header{
     max-width: 1160px;
     margin: 0 auto;
@@ -56,6 +55,12 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
     justify-content: space-between;
+}
+.institue-name{
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .school-name{
     margin: 0;
@@ -88,6 +93,9 @@ body{
 .nav-icon{
     display: none;
 }
+#horizontal-line{
+    display:none;
+}
 
 /* ________Banner ______ Styles______ */
 .banner{
@@ -108,4 +116,42 @@ body{
 }
 
 
+
 /* ____________responsive_______small_______device_______ */
+
+@media screen and (max-width: 576px) {
+    .institue-name,
+    .banner{
+        flex-direction: column;
+    }  
+    .header{
+        margin: 16px;
+    }
+    .school-name, .banner-links, .nav-btn{
+        display: none;
+    }
+    .nav-icon, #horizontal-line{
+        display: block;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    .banner-content{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-description{
+        font-size: 0.8rem;
+    }
+    .btn-primary{
+        font-size: 1rem;
+        border-radius: 8px;
+    } 
+}
