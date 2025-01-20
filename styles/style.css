@@ -43,11 +43,22 @@ body{
 .violet-blue{
     color: #5D58EF;
 }
+
+.card-bg1{
+    background-image: linear-gradient(#afbeaf, #f9e2e2);
+}
+.card-bg2{
+    background-image: linear-gradient(#8ba9f0, #fbe9ff);
+}
+.card-bg3{
+    background-image: linear-gradient(#ceade6, #fee7e7);
+}
 /* ______________header styles_________ */
 .header{
     max-width: 1160px;
     margin: 0 auto;
 }
+/* ___________navbar styles_______ */
 .navbar{
     justify-content: center;
     align-items: center;
@@ -76,6 +87,9 @@ body{
 .nav-links{
     text-decoration: none;
 }
+#home{
+    font-weight: 700;
+}
 .nav-btn{
     background-color: orange;
     padding: 10px 60px;
@@ -98,6 +112,7 @@ body{
 }
 
 /* ________Banner ______ Styles______ */
+
 .banner{
     justify-content: space-between;
 }
@@ -115,8 +130,46 @@ body{
     margin-bottom: 24px;
 }
 
-
-
+/*___________  card section styles_________*/
+.card-section{
+    background-image: url(/assets/bg.png);
+}
+.section-title{
+    margin-top: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.85rem;
+}
+.card-container{
+    margin: 80px 140px;
+    justify-content: center;
+    gap: 28px;
+}
+.card{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 40px;
+    border-radius: 18px; 
+}
+.card-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.card-description{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.read-more{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.card-icons{
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
 /* ____________responsive_______small_______device_______ */
 
 @media screen and (max-width: 576px) {
