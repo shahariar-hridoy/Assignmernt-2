@@ -306,7 +306,7 @@ cursor: pointer;
     .header{
         margin: 16px;
     }
-    .school-name, .banner-links, .nav-btn{
+    .school-name, .banner-links, .nav-btn,.left-card-story{
         display: none;
     }
     .nav-icon, #horizontal-line{
@@ -354,5 +354,31 @@ cursor: pointer;
     .read-more{
         font-weight: 700;
         font-size: 0.63rem;
+    }
+    .right-card-stories{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .stories-card{
+        position: relative;
+        max-width: 175px;
+        gap: 10px;
+        margin: 0;
+    }
+    .time-date{
+        font-size: 0.55rem;
+    }
+    .story-img{
+        max-width: 175px;
+    }
+    .story-title{
+        font-size: 0.55rem;
+    }
+    .time-date-container{
+        position: absolute;
+        top: 85px;
+        left: 22px;   
     }
 }
