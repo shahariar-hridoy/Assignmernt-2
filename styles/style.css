@@ -295,14 +295,68 @@ cursor: pointer;
     border-radius: 48px;
 }
 
+/* _________footer styles__________ */
+.footer{
+    
+}
+.footer-container{
+    color: white;
+    background-color: rgb(94, 94, 236);
+    justify-content: space-evenly;
+    text-align: left;
+    padding-top: 120px;
+    padding-bottom: 170px;
+}
+.logo-name{
+    align-items: center;
+    gap: 10px;
+}
+.footer-name{
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.625rem;
+}
+.footer-section-description{
+    margin-top: 36px;
+    max-width: 400px;
+    font-size: 1.25rem;
+}
+.about-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.about-school{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.footer-links{
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin-bottom: 24px;
+}
+.scocials{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.scocial-icon{
+    margin-right: 10px;
+}
+
 /* ____________responsive_______small_______device_______ */
 
 @media screen and (max-width: 576px) {
     .institue-name,
-    .banner{
+    .banner,
+    .footer-container{
         flex-direction: column;
     }
     
+    .footer-container{
+        text-align: left;
+        padding-left: 16px;
+    }
     .header{
         margin: 16px;
     }
