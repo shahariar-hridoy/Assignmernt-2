@@ -134,6 +134,7 @@ body{
 .card-section{
     background-image: url(/assets/bg.png);
 }
+
 .section-title{
     margin-top: 60px;
     text-align: center;
@@ -141,6 +142,8 @@ body{
     font-size: 2.85rem;
 }
 .card-container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
     margin: 80px 140px;
     justify-content: center;
     gap: 28px;
@@ -164,19 +167,36 @@ body{
     font-weight: 700;
     font-size: 1rem;
 }
+.read-more-link{
+    text-decoration: none;
+}
 .card-icons{
     gap: 10px;
     justify-content: center;
     align-items: center;
     margin-bottom: 60px;
 }
+.card-btn{
+    background-color: rgb(245, 213, 213);
+    padding: 17px;
+    border-radius: 50px;
+    border: none;
+}
+.card-btn:hover{
+background-color: #01ACFD;
+cursor: pointer;
+}
+
 /* ____________responsive_______small_______device_______ */
 
 @media screen and (max-width: 576px) {
     .institue-name,
     .banner{
         flex-direction: column;
-    }  
+    }
+    .card-container{
+        grid-template-columns: repeat(1 1fr);
+    } 
     .header{
         margin: 16px;
     }
