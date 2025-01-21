@@ -43,6 +43,9 @@ body{
 .violet-blue{
     color: #5D58EF;
 }
+.purple{
+    color: purple;
+}
 
 .card-bg1{
     background-image: linear-gradient(#afbeaf, #f9e2e2);
@@ -160,6 +163,7 @@ body{
     font-size: 1.5rem;
 }
 .card-description{
+    max-width: 286px;
     font-weight: 500;
     font-size: 1rem;
 }
@@ -194,9 +198,7 @@ cursor: pointer;
     .banner{
         flex-direction: column;
     }
-    .card-container{
-        grid-template-columns: repeat(1 1fr);
-    } 
+    
     .header{
         margin: 16px;
     }
@@ -227,4 +229,26 @@ cursor: pointer;
         font-size: 1rem;
         border-radius: 8px;
     } 
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 16px;
+    }
+    .section-title{
+        font-size: 1.625rem;
+    } 
+    .card-icons{
+        display: none;
+    }
+    .card-title{
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .card-description{
+        font-weight: 500;
+        font-size: 0.63rem;
+    }
+    .read-more{
+        font-weight: 700;
+        font-size: 0.63rem;
+    }
 }
