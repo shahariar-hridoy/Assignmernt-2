@@ -220,7 +220,7 @@ cursor: pointer;
 
 /* ____________________our stories section_________________ */
 .stories-section{
-    background-image: linear-gradient(white,#d7b06e);
+    background-image: linear-gradient(white,#FEA301);
 }
 .stories-card-container{
     background-image: url(/assets/bg.png);
@@ -305,7 +305,7 @@ cursor: pointer;
 }
 .footer-container{
     color: white;
-    background-color: rgb(94, 94, 236);
+    background-color: #01ACFD;
     justify-content: space-evenly;
     text-align: left;
     padding-top: 120px;
@@ -330,7 +330,7 @@ cursor: pointer;
     grid-template-columns: repeat(1, 1fr);
 }
 .about-school{
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.5rem;
 }
 .footer-links{
@@ -345,7 +345,7 @@ cursor: pointer;
     font-size: 1.5rem;
 }
 .scocial-icon{
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 /* ____________responsive_______small_______device_______ */
@@ -418,9 +418,10 @@ cursor: pointer;
         margin-right: 16px;
     }
     .stories-card{
+        overflow: hidden;
         position: relative;
-        max-width: 100%;
-        gap: auto;
+        max-width: 175px;
+        max-height: 220px;
         margin: 0;
     }
     .time-date{
@@ -428,14 +429,41 @@ cursor: pointer;
         padding: 5px 8px;
     }
     .story-img{
-        width: 100%;
+        max-width: 175px;
+        height: auto;
     }
     .story-title{
+        margin: 0;
         font-size: 0.55rem;
     }
     .time-date-container{
         position: absolute;
-        top: 45%;
-        left: 10%;   
+        top: 42%;
+        left: 10%;
+    }
+    .footer-name{
+        margin: 0;
+        font-weight: 700;
+        font-size: 2.125rem;
+    }
+    .footer-section-description{
+        margin-top: 36px;
+        max-width: 400px;
+        font-size: 1rem;
+    }
+    .about-school{
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    .footer-links{
+        color: white;
+        font-weight: 500;
+        font-size: 1rem;
+        text-decoration: none;
+        margin-bottom: 24px;
+    }
+    .scocials{
+        font-weight: 700;
+        font-size: 1.35rem;
     }
 }
